@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Student Information</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css"> <!-- Link to your CSS file -->
+</head>
+
+<body>
+  <header>
+    <h1>Course Information</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>Course Name: </h2> <p id="details"><%= data.Course %></p>
+    </div>
+    <div class="container">
+      <h2>Mode: </h2><p id="details"><%= data.Mode %></p>
+    </div>
+    <div class="container">
+      <h2>Course Duration: </h2><p id="details"><%= data.Duration %></p>
+    </div>
+    <div class="container">
+      <h2>Embedded_or Not:</h2><p id="details"><%= data.Embedded %></p>
+    </div>
+    <div class="container">
+      <h2>Core_paper or not:</h2><p id="details"><%= data['Core paper'] %></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Your data is preserved</p>
+  </footer>
+</body>
+
+</html>
